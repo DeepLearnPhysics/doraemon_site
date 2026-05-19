@@ -1224,6 +1224,14 @@ figure.shiki code {
   font-variant-numeric: tabular-nums;
 }
 
+.docs-body h3.no-counter {
+  counter-increment: none;
+}
+
+.docs-body h3.no-counter::before {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .site-top {
     align-items: flex-start;
